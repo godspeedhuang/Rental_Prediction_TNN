@@ -3,6 +3,9 @@ import dash_bootstrap_components as dbc
 import pickle
 from func import make_map
 import numpy as np
+
+
+
 app = Dash(
     __name__,
     external_stylesheets=[dbc.themes.LUX],
@@ -517,6 +520,6 @@ def update_map(vill_name):
     return map_update
 
 
-if __name__=='__main__':
+if __name__=="__main__":
     app.run_server(host='0.0.0.0', port=9000)
     # app.run_server(debug=True)
