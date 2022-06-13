@@ -5,7 +5,9 @@ from func import make_map
 import numpy as np
 app = Dash(
     __name__,
-    external_stylesheets=[dbc.themes.LUX]
+    external_stylesheets=[dbc.themes.LUX],
+    meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}], # USE TO DISPLAY ON MOBILEPHOBE
+    url_base_pathname='/',
     )
 server = app.server
 app.title = "台南租屋估價系統"
