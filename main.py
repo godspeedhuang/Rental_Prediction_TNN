@@ -507,6 +507,7 @@ def get_parameters(button,
         y=str(float(x[0])*ping)
         return f"以上條件預估單坪價格為 {x[0]} 坪/元 租金為 {y} 元"
 
+
 @app.callback(
     Output('map-part', 'children'),
     Input('x-vill', 'value'),
