@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1fd47ce836089c82b014e4d61305026d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1fd47ce836089c82b014e4d61305026d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1fd47ce836089c82b014e4d61305026d = L.map(
+                "map_1fd47ce836089c82b014e4d61305026d",
+                {
+                    center: [22.99717028569345, 120.21292880134021],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1fd47ce836089c82b014e4d61305026d);
+
+            
+
+        
+    
+            var tile_layer_bbd6ac65f490f4630b75ca92fab0aa74 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1fd47ce836089c82b014e4d61305026d);
+        
+    
+
+        function geo_json_d733aac5b07c98e31b8befe19ae1fcac_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d733aac5b07c98e31b8befe19ae1fcac = L.geoJson(null, {
+                onEachFeature: geo_json_d733aac5b07c98e31b8befe19ae1fcac_onEachFeature,
+            
+        });
+
+        function geo_json_d733aac5b07c98e31b8befe19ae1fcac_add (data) {
+            geo_json_d733aac5b07c98e31b8befe19ae1fcac
+                .addData(data)
+                .addTo(map_1fd47ce836089c82b014e4d61305026d);
+        }
+            geo_json_d733aac5b07c98e31b8befe19ae1fcac_add({"geometry": {"coordinates": [[[[120.24275717795658, 22.982494043184545], [120.24350920992146, 22.982350525091313], [120.2442842380506, 22.98235611419019], [120.24509243945906, 22.98236193929263], [120.24641827565385, 22.982374187479984], [120.24715022741465, 22.982362733442713], [120.24793048987125, 22.98233830731128], [120.24819116184166, 22.982321250200357], [120.24827337504261, 22.98232134220703], [120.24844088637703, 22.982321529220634], [120.24847224669084, 22.982321564223213], [120.24869509275644, 22.98231874921818], [120.24911432647306, 22.98231345220895], [120.2492516824314, 22.982311716205963], [120.24925445363219, 22.982272795913467], [120.2492696953097, 22.98216801012675], [120.2492888655853, 22.9818885660276], [120.2492859357046, 22.98168070946462], [120.24930647372291, 22.9812840764858], [120.24931337855588, 22.98107261789756], [120.2493161006912, 22.980714197204172], [120.2493180546347, 22.980502815615935], [120.24928012388425, 22.980155437996466], [120.24927302266312, 22.979924688259906], [120.24924121171458, 22.979573753612698], [120.24922280677683, 22.9793971842795], [120.24919272025254, 22.979070352811654], [120.24916181631792, 22.978826231964646], [120.2491029992174, 22.978487252392682], [120.2490637938278, 22.978261643679282], [120.249029514132, 22.977972788489915], [120.24902611116521, 22.97786486767523], [120.24900021552082, 22.97774701677659], [120.24899470695122, 22.977657519099672], [120.24900710233905, 22.97753439317662], [120.24903584858852, 22.97742362735388], [120.24903301915307, 22.977344434755892], [120.24905268539398, 22.977275176242564], [120.24906897986367, 22.977161173390783], [120.24905322437928, 22.977116652048352], [120.2490148780792, 22.97705467456405], [120.2490033019888, 22.97703596441773], [120.24870737799549, 22.97673209798642], [120.24830096115015, 22.976353188917678], [120.24803313537011, 22.976091331790762], [120.2478741352724, 22.975944771591053], [120.24779071462387, 22.97586120590948], [120.24770823683714, 22.975824730586716], [120.24755214039124, 22.975822832487793], [120.24694702682088, 22.97585052537329], [120.24666144888269, 22.975877280425507], [120.24649826491991, 22.975892739457166], [120.24639168073878, 22.976074918807704], [120.24622473696016, 22.97615016930269], [120.2456479249413, 22.976354255591986], [120.24519153225027, 22.976510311581805], [120.24445455860088, 22.976757365162953], [120.24410785397667, 22.976948285505244], [120.24368924502615, 22.977197870289636], [120.24340305081266, 22.977379704607287], [120.2432984948415, 22.977415967850717], [120.24327611838898, 22.97747378230074], [120.24328315799086, 22.977516166640783], [120.24331709389384, 22.97766489583703], [120.24331508269836, 22.97787398449799], [120.24326918735679, 22.978242330408833], [120.24324566723831, 22.978428821883362], [120.24323145425517, 22.978523247629425], [120.24317585374253, 22.978591984157184], [120.24303296177716, 22.97869322591501], [120.2428852030003, 22.978799151710874], [120.24284879448854, 22.978836542997477], [120.2428291902305, 22.978909252571484], [120.24278989152292, 22.978988025188087], [120.24274774655079, 22.979048472657787], [120.24268368229644, 22.979065666775384], [120.24261578702624, 22.97907717184659], [120.24251402824386, 22.979129477234167], [120.2424543675019, 22.979181035629054], [120.24240252292981, 22.979252001182218], [120.24236058613124, 22.979322795737417], [120.24227460380199, 22.97942076249852], [120.24222255504601, 22.97948138697054], [120.24215099189416, 22.979495249062012], [120.24204306315914, 22.97948678596415], [120.24192082513748, 22.97944410158678], [120.24179452153587, 22.979363446901452], [120.24179444490952, 22.97938443707052], [120.24179261182535, 22.979885233105293], [120.24178811393004, 22.981296287474464], [120.24177676509963, 22.98264624035177], [120.24177647072551, 22.982681196633465], [120.24275717795658, 22.982494043184545]]]], "type": "MultiPolygon"}, "properties": {"COUNTYCODE": "67000", "COUNTYID": "D", "COUNTYNAME": "\u81fa\u5357\u5e02", "NOTE": null, "TOWNCODE": "67000320", "TOWNID": "D01", "TOWNNAME": "\u6771\u5340", "VILLCODE": "67000320043", "VILLENG": "Yusheng Vil.", "VILLNAME": "\u88d5\u8056\u91cc", "cost": 656.456}, "type": "Feature"});
+
+        
+    
+            map_1fd47ce836089c82b014e4d61305026d.fitBounds(
+                [[22.975822832487793, 120.24177647072551], [22.982681196633465, 120.2493180546347]],
+                {"padding": [100, 100]}
+            );
+        
+</script>
+</html>
