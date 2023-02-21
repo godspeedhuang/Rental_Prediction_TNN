@@ -74,11 +74,11 @@ def bool2int(x):
     elif x=='否' or x=='無' or x=='不可':
         return [1,0]
 
-lr=open('linearregression2.pickle','rb')
+lr=open(r'model\linearregression2.pickle','rb')
 lr_model=pickle.load(lr)
-rd=open('rd10002.pickle','rb')
+rd=open(r'model\rd10002.pickle','rb')
 rd_model=pickle.load(rd)
-xgb=open('xgb10002.pickle','rb')
+xgb=open(r'model\xgb10002.pickle','rb')
 xgb_model=pickle.load(xgb)
 
 app.layout=html.Div([
